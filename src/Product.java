@@ -28,12 +28,13 @@ public class Product {
 	private double basePrice;
 	private int numPerson;
 	private Product.Material type;
-	
+	private double totalCost;
 	
 	public Product(double basePrice, int numPerson, Product.Material type) {
 		this.basePrice = basePrice;
 		this.numPerson = numPerson;
 		this.type = type;		
+		this.totalCostHelper();
 		
 	}
 	
@@ -47,6 +48,25 @@ public class Product {
 	
 	public Product.Material getMaterial() {
 		return type;
+	}
+	
+	public double getTotalCost() {
+		return totalCost;
+	}
+	
+	/**
+	 * This method calculates the total makeup cost based on the rules
+	 * and the final value will be assigned to a Product instance
+	 */
+	private void totalCostHelper() {
+		// flate cost
+		double baseCost = (1 + FLAT_RATE) * basePrice;
+
+		// extra cost
+		double totalLaborRate = numPerson * LABOR_RATE;
+		double materialRate = type.rate;
+
+		this.totalCost = baseCost * (1 + totalLaborRate + materialRate);
 	}
 	
 }
