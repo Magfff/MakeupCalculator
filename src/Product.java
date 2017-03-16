@@ -6,6 +6,7 @@
  */
 public class Product {
 	
+	
 	/**
 	 * This enum Material contains the name of the material type 
 	 * the index of the type will be used as numeric codes to allow user to assign the associated material to product
@@ -35,21 +36,36 @@ public class Product {
 		this.numPerson = numPerson;
 		this.type = type;		
 		this.totalCostHelper();
-		
 	}
 	
+	/**
+	 * 
+	 * @return the base price of the product
+	 */
 	public double getPrice() {
 		return basePrice;
 	}
 	
+	/**
+	 * 
+	 * @return the number of people need to finish the makeup
+	 */
 	public int getPersonNum() {
 		return numPerson;
 	}
 	
+	/**
+	 * 
+	 * @return the material of the product
+	 */
 	public Product.Material getMaterial() {
 		return type;
 	}
 	
+	/**
+	 * 
+	 * @return total cost of the product
+	 */
 	public double getTotalCost() {
 		return totalCost;
 	}
@@ -68,5 +84,14 @@ public class Product {
 
 		this.totalCost = baseCost * (1 + totalLaborRate + materialRate);
 	}
+	
+	/**
+	 * @return a string including info of input base price, number of people, material type of the produce
+	 */
+	public String toString() {
+		String input = String.format("$%,.2f", this.basePrice) + ", " + this.numPerson + " people, " + type;
+		return input;
+	}
+
 	
 }
