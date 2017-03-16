@@ -18,6 +18,4 @@ public class MaterialTest {
 		assertEquals(Material.values()[2],Material.ELECTRONIC);
 		assertEquals(Material.values()[3],Material.OTHERS);
 	}
-
-
 }
