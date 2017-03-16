@@ -1,0 +1,112 @@
+Script started on Thu Mar 16 18:51:32 2017
+[?1034hbash-3.2$ mvn clean[K[K[K[Kompile
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MakeupCalcultor 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MakeupCalculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ MakeupCalculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/ziqifeng/Desktop/workspace/MakeupCalculator/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.926 s
+[INFO] Finished at: 2017-03-16T18:51:50-04:00
+[INFO] Final Memory: 13M/167M
+[INFO] ------------------------------------------------------------------------
+bash-3.2$ mvn package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MakeupCalcultor 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MakeupCalculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ MakeupCalculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/ziqifeng/Desktop/workspace/MakeupCalculator/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ MakeupCalculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/ziqifeng/Desktop/workspace/MakeupCalculator/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ MakeupCalculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/ziqifeng/Desktop/workspace/MakeupCalculator/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ MakeupCalculator ---
+[INFO] Surefire report directory: /Users/ziqifeng/Desktop/workspace/MakeupCalculator/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.java.ProductTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ MakeupCalculator ---
+[INFO] Building jar: /Users/ziqifeng/Desktop/workspace/MakeupCalculator/target/MakeupCalculator-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.5.3:single (default) @ MakeupCalculator ---
+[INFO] Building jar: /Users/ziqifeng/Desktop/workspace/MakeupCalculator/target/MakeupCalculator-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.047 s
+[INFO] Finished at: 2017-03-16T18:52:00-04:00
+[INFO] Final Memory: 19M/169M
+[INFO] ------------------------------------------------------------------------
+bash-3.2$ mvn [K[K[K[Kjava -jar target/MakeupCalculator-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+User Guide for enter product material:
+
+	Numeric codes for materials:
+		 0 : Pharmaceuticals 
+		 1 : Food 
+		 2 : Electronic
+		 3 : Others 
+
+--------------------------------------------------------------
+Product #0
+	Enter the base price: $ 1299.99
+	Enter the number of workers: 3
+	Enter the numeric code for the product material: 1
+  Input: $1,299.99, 3 people, FOOD
+  Output: $1,591.58
+
+Product #1
+	Enter the base price: $ 5432
+	Enter the number of workers: 1
+	Enter the numeric code for the product material: 0
+  Input: $5,432.00, 1 people, PHARMACEUTICALS
+  Output: $6,199.81
+
+Product #2
+	Enter the base price: $ 12456.95
+	Enter the number of workers: 4
+	Enter the numeric code for the product material: 3
+  Input: $12,456.95, 4 people, OTHERS
+  Output: $13,707.63
+
+Product #3
+	Enter the base price: $ ^Z
+[1]+  Stopped                 java -jar target/MakeupCalculator-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+bash-3.2$ exit
+exit
+There are stopped jobs.
+bash-3.2$ exit
+exit
+
+Script done on Thu Mar 16 18:53:11 2017

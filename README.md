@@ -19,11 +19,16 @@ Clone entire repo into your local machine. Open your terminal, run
 
 You should be able to see JUnit test results when running *mvn package*.
 
+For details, check file **OptionOneScript**
+
 ### Option Two:
 
 Download the MakeupCalculator.jar on your local machine. Open your terminal
 
 >**java -jar MakeupCalculator.jar**
+
+For details, check file **OptionTwoScript**
+
 
 This application does not have GUIs .**It runs on the terminal and keeps running unless the user force to exit(^Z)**.
 

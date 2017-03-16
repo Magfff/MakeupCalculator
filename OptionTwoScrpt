@@ -1,0 +1,41 @@
+Script started on Thu Mar 16 18:49:05 2017
+[?1034hbash-3.2$ java -jar MakeupCalculator.jar
+User Guide for enter product material:
+
+	Numeric codes for materials:
+		 0 : Pharmaceuticals 
+		 1 : Food 
+		 2 : Electronic
+		 3 : Others 
+
+--------------------------------------------------------------
+Product #0
+	Enter the base price: $ 1299.99
+	Enter the number of workers: 3
+	Enter the numeric code for the product material: 1
+  Input: $1,299.99, 3 people, FOOD
+  Output: $1,591.58
+
+Product #1
+	Enter the base price: $ 5432
+	Enter the number of workers: 1
+	Enter the numeric code for the product material: 0
+  Input: $5,432.00, 1 people, PHARMACEUTICALS
+  Output: $6,199.81
+
+Product #2
+	Enter the base price: $ 12456.95
+	Enter the number of workers: 4
+	Enter the numeric code for the product material: 3
+  Input: $12,456.95, 4 people, OTHERS
+  Output: $13,707.63
+
+Product #3
+	Enter the base price: $ ^Z
+[1]+  Stopped                 java -jar MakeupCalculator.jar
+bash-3.2$ exit
+exit
+bash-3.2$ exit
+exit
+There are stopped jobs.
+Script done on Thu Mar 16 18:50:16 2017
