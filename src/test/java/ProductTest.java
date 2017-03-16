@@ -1,5 +1,7 @@
-import static org.junit.Assert.*;
+package test.java;
 
+import static org.junit.Assert.*;
+import main.java.*;
 import org.junit.Test;
 
 public class ProductTest {

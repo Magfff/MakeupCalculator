@@ -1,3 +1,5 @@
+package main.java;
+
 /**
  *
  * This class will hold all information about a product object including basePrice, #person need, and material type etc
@@ -18,7 +20,7 @@ public class Product {
 	public enum Material {
 			PHARMACEUTICALS(0.075), FOOD(0.13), ELECTRONIC(0.02), OTHERS(0);
 			
-			protected double rate;
+			public double rate;
 
 			private Material(double value) {
 				this.rate = value;
