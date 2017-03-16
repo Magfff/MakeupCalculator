@@ -6,7 +6,8 @@
  */
 public class Product {
 	
-	
+	//class instance to count how many produce has been created 
+	private static int count=0;
 	/**
 	 * This enum Material contains the name of the material type 
 	 * the index of the type will be used as numeric codes to allow user to assign the associated material to product
@@ -36,6 +37,7 @@ public class Product {
 		this.numPerson = numPerson;
 		this.type = type;		
 		this.totalCostHelper();
+		count+=1;
 	}
 	
 	/**
@@ -91,6 +93,10 @@ public class Product {
 	public String toString() {
 		String input = String.format("$%,.2f", this.basePrice) + ", " + this.numPerson + " people, " + type;
 		return input;
+	}
+	
+	public static int getCount(){
+		return count;
 	}
 
 	

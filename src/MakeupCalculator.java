@@ -28,6 +28,7 @@ public class MakeupCalculator {
 		Product product;
 		
 		while (true) {
+			System.out.println("Product #"+Product.getCount());
 			//ask user to enter base price of a product
 			while (true) {
 				System.out.print("\tEnter the base price: $ ");

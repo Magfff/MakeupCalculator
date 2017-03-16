@@ -65,6 +65,15 @@ public class ProductTest {
 		 */
 		product=new Product(12456.95,4,Product.Material.OTHERS);
 		assertEquals(13707.63,product.getTotalCost(),precison);
-		
 	}	
+	
+	@Test
+	public void testCount(){
+		//create 3 product objects
+		Product product=new Product(1299.99,3,Product.Material.FOOD);
+		product=new Product(5432.00,1,Product.Material.PHARMACEUTICALS);
+		product=new Product(12456.95,4,Product.Material.OTHERS);
+		
+		assertEquals(3,Product.getCount());
+	}
 }
